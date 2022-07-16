@@ -1,0 +1,226 @@
+$marginTop: 7rem;
+$bp-1440px: 90em; //1440px
+$bp-1200px: 75em;
+$bp-1024px: 64em;
+$bp-950px: 59.375em;
+$bp-768px: 48em;
+$bp-610px: 38.125em;
+$bp-500px: 31.25em;
+$bp-320px: 20em;
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  @media only screen and (max-width: $bp-610px) {
+    font-size: 38%;
+  }
+}
+body {
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Arial;
+}
+.formContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.incentiveForm {
+  width: 60rem;
+  height: 70rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  &-title {
+    font-size: 2.3rem;
+    margin: 0 auto;
+    height: max-content;
+  }
+  &-firstLineContainer {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    margin-top: $marginTop;
+    gap: 2rem;
+    &-technicianTypeContainer {
+      order: 1;
+      width: 50%;
+      display: flex;
+      justify-content: right;
+      gap: 1rem;
+      align-items: center;
+
+      &-label {
+        order: 1;
+      }
+      &-technicianSelection {
+        border-radius: 5px;
+        width: 7rem;
+        text-align: center;
+        font-size: 1.6rem;
+        height: 3rem;
+        @media only screen and (max-width: $bp-610px) {
+          width: 10rem;
+        }
+      }
+    }
+    &-hoursInputContainer {
+      position: relative;
+      display: flex;
+      width: 50%;
+      height: max-content;
+      align-items: center;
+      gap: 1rem;
+
+      &-label {
+        width: 50%;
+        order: 1;
+        @media only screen and (max-width: $bp-610px) {
+          width: 15rem;
+        }
+      }
+      &-inputContainer {
+        position: relative;
+        &-input {
+          width: 100%;
+          border: 0.5px solid black;
+          border-radius: 5px;
+          height: 3rem;
+          padding-left: 1rem;
+          @media only screen and (max-width: $bp-610px) {
+            font-size: 1.7rem;
+          }
+        }
+        .achievedMoneyInvalidMessage {
+          position: absolute;
+          font-size: 1.3rem;
+          top: 3.5rem;
+          right: 0;
+          color: red;
+        }
+      }
+    }
+  }
+  &-secondLineContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: $marginTop;
+
+    &-salary {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &-label {
+        width: 50%;
+        order: 1;
+      }
+      &-inputContainer {
+        position: relative;
+        &-input {
+          width: 100%;
+          border: 0.5px solid black;
+          border-radius: 5px;
+          height: 3rem;
+          padding-left: 1rem;
+          @media only screen and (max-width: $bp-610px) {
+            font-size: 1.7rem;
+          }
+        }
+        .salaryInvalidMessage {
+          position: absolute;
+          font-size: 1.3rem;
+          color: red;
+          top: 3.5rem;
+          right: 0;
+        }
+      }
+    }
+  }
+  .copyrightText {
+    list-style: none;
+    margin: 3rem 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    li {
+      margin: 1rem 0 0 auto;
+      .mohamedIsmaiel {
+        color: red;
+        &:visited,
+        &:active,
+        &:link {
+          color: red;
+        }
+      }
+    }
+  }
+}
+.button {
+  position: relative;
+  margin: $marginTop auto 6rem auto;
+  width: 12rem;
+  font-size: 1.8rem;
+  height: 3rem;
+  background-color: rgba(153, 153, 153, 0.767);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(124, 124, 124, 0.767);
+  }
+}
+.invalid {
+  border: 1px solid red;
+}
+.redLine {
+  border-top: 1px solid red;
+  margin-bottom: 2rem;
+}
+.outputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  &-text {
+    order: 2;
+  }
+  &-output {
+    order: 1;
+  }
+  &-currency {
+    transform: translateX(0.4rem);
+  }
+}
+
+*:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
