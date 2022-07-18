@@ -51,6 +51,9 @@ body {
   padding: 4rem;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: $bp-610px) {
+    width: 90vw;
+  }
   &-title {
     font-size: 2.3rem;
     margin: 0 auto;
