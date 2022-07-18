@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [technicianType, setTechnicianType] = useState("سمكره");
