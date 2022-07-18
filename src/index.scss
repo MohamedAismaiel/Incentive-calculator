@@ -69,22 +69,21 @@ body {
       display: flex;
       justify-content: right;
       gap: 1rem;
-
       align-items: center;
 
       &-label {
         order: 1;
-        width: 10rem;
+        width: 8rem;
         text-align: end;
       }
       &-technicianSelection {
         border-radius: 5px;
-        width: 10rem;
+        width: 14rem;
         text-align: center;
         font-size: 1.6rem;
         height: 3rem;
-        transform: translateX(3rem);
         border: 1px solid black;
+        transform: translateX(1.5rem);
         @media only screen and (max-width: $bp-610px) {
           width: 10rem;
         }
@@ -101,6 +100,7 @@ body {
       &-label {
         width: 50%;
         order: 1;
+        width: 8rem;
         @media only screen and (max-width: $bp-610px) {
           width: 15rem;
         }
@@ -108,7 +108,7 @@ body {
       &-inputContainer {
         position: relative;
         &-input {
-          width: 100%;
+          width: 14rem;
           border: 0.5px solid black;
           border-radius: 5px;
           height: 3rem;
@@ -146,7 +146,7 @@ body {
       &-inputContainer {
         position: relative;
         &-input {
-          width: 100%;
+          width: 14rem;
           border: 0.5px solid black;
           border-radius: 5px;
           height: 3rem;
