@@ -5,8 +5,8 @@ $bp-1024px: 64em;
 $bp-950px: 59.375em;
 $bp-768px: 48em;
 $bp-610px: 38.125em;
-$bp-500px: 31.25em;
-$bp-320px: 20em;
+$bp-345px: 21.5625em;
+$bp-290px: 18.125em;
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +23,12 @@ html {
   overflow-x: hidden;
   @media only screen and (max-width: $bp-610px) {
     font-size: 38%;
+  }
+  @media only screen and (max-width: $bp-345px) {
+    font-size: 32%;
+  }
+  @media only screen and (max-width: $bp-290px) {
+    font-size: 28%;
   }
 }
 body {
@@ -67,6 +73,7 @@ body {
 
       &-label {
         order: 1;
+        width: 10rem;
       }
       &-technicianSelection {
         border-radius: 5px;
@@ -74,6 +81,7 @@ body {
         text-align: center;
         font-size: 1.6rem;
         height: 3rem;
+        border: 1px solid black;
         @media only screen and (max-width: $bp-610px) {
           width: 10rem;
         }
@@ -104,6 +112,7 @@ body {
           padding-left: 1rem;
           @media only screen and (max-width: $bp-610px) {
             font-size: 1.7rem;
+            border: 1px solid black;
           }
         }
         .achievedMoneyInvalidMessage {
@@ -141,6 +150,7 @@ body {
           padding-left: 1rem;
           @media only screen and (max-width: $bp-610px) {
             font-size: 1.7rem;
+            border: 1px solid black;
           }
         }
         .salaryInvalidMessage {
@@ -194,6 +204,7 @@ body {
   border-top: 1px solid red;
   margin-bottom: 2rem;
 }
+
 .outputContainer {
   display: flex;
   justify-content: center;
