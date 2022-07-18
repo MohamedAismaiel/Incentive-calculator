@@ -118,6 +118,7 @@ body {
           @media only screen and (max-width: $bp-610px) {
             font-size: 1.7rem;
             border: 1px solid black;
+            width: 8rem;
           }
         }
         .achievedMoneyInvalidMessage {
@@ -142,7 +143,7 @@ body {
       align-items: center;
       gap: 1rem;
       &-label {
-        width: 50%;
+        width: 15rem;
         order: 1;
       }
       &-inputContainer {
@@ -156,6 +157,7 @@ body {
           @media only screen and (max-width: $bp-610px) {
             font-size: 1.7rem;
             border: 1px solid black;
+            width: 8rem;
           }
         }
         .salaryInvalidMessage {
