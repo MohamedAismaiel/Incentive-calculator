@@ -88,7 +88,8 @@ body {
         border: 1px solid black;
         transform: translateX(1.5rem);
         @media only screen and (max-width: $bp-610px) {
-          width: 9rem;
+          width: 8rem;
+          text-align: center;
         }
       }
     }
@@ -200,6 +201,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   cursor: pointer;
+
   &:hover {
     background-color: rgba(124, 124, 124, 0.767);
   }
