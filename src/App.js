@@ -95,6 +95,7 @@ function App() {
             </label>
             <div className="incentiveForm-firstLineContainer-hoursInputContainer-inputContainer">
               <input
+                pattern="\d*"
                 name="techniciansHour"
                 className={achievedMoneyCss}
                 type="number"
@@ -123,6 +124,7 @@ function App() {
             </label>
             <div className="incentiveForm-secondLineContainer-salary-inputContainer">
               <input
+                pattern="\d*"
                 className={salaryInputCss}
                 type="number"
                 name="salary"
