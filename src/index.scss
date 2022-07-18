@@ -28,7 +28,7 @@ html {
     font-size: 32%;
   }
   @media only screen and (max-width: $bp-290px) {
-    font-size: 28%;
+    font-size: 22%;
   }
 }
 body {
@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: $bp-610px) {
-    width: 90vw;
+    width: 100vw;
   }
   &-title {
     font-size: 2.3rem;
