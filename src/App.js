@@ -34,6 +34,7 @@ function App() {
     if (
       technicianType === "سمكره" ||
       technicianType === "زجاج" ||
+      technicianType === "كهرباء" ||
       technicianType === "سروجي"
     ) {
       const incentive = (+achievedMoney / 292.6) * 65 - +salary;
@@ -87,6 +88,7 @@ function App() {
               <option value="ميكانيكا">ميكانيكا</option>
               <option value="زجاج">زجاج</option>
               <option value="سروجي">سروجي</option>
+              <option value="كهرباء">كهرباء</option>
             </select>
           </div>
           <div className="incentiveForm-firstLineContainer-hoursInputContainer">

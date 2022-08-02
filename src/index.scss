@@ -87,6 +87,7 @@ body {
         height: 3rem;
         border: 1px solid black;
         transform: translateX(1.5rem);
+
         @media only screen and (max-width: $bp-610px) {
           width: 8rem;
           text-align: center;
