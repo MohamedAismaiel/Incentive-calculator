@@ -33,16 +33,19 @@ function App() {
   const calculateHandler = () => {
     if (
       technicianType === "سمكره" ||
-      technicianType === "ميكانيكا" ||
       technicianType === "زجاج" ||
       technicianType === "سروجي"
     ) {
-      const x = (+achievedMoney / 296) * 62 - +salary;
-      setOutput(x);
+      const incentive = (+achievedMoney / 292.6) * 65 - +salary;
+      incentive <= 0 ? setOutput(0) : setOutput(incentive);
     }
     if (technicianType === "دهان") {
-      const x = (+achievedMoney / 296) * 92 - +salary;
-      setOutput(x);
+      const incentive = (+achievedMoney / 292.6) * 95 - +salary;
+      incentive <= 0 ? setOutput(0) : setOutput(incentive);
+    }
+    if (technicianType === "ميكانيكا") {
+      const incentive = (+achievedMoney / 292.6) * 63 - +salary;
+      incentive <= 0 ? setOutput(0) : setOutput(incentive);
     }
   };
   const salaryInputCss = salaryIsInvalid
@@ -168,9 +171,7 @@ function App() {
         <ul className="copyrightText">
           <li>هذا البرنامج غير رسمي ولا يمت للاداره بأي صله *</li>
 
-          <li>
-            هذا البرنامج اجتهاد شخصي لمساعده الفنيين لأحتساب حوافزهم التقريبيه *
-          </li>
+          <li>هذا البرنامج لمساعده الفنيين لأحتساب حوافزهم التقريبيه *</li>
           <li>
             الحوافز المحتسبه هي فقط الحوافز المتوقعه وقد تزيد أو تنقص حسب سياسه
             الشركه *
